@@ -48,7 +48,7 @@ body {
   font-size: 3rem;
   font-family: var(--font-heading);
   font-weight: 500;
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 1.3rem 0;
 }
 
 .heading-tertiary {
@@ -64,6 +64,10 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 1rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem;
 }
 
 hr {
@@ -135,6 +139,29 @@ hr {
 }
 .section-instructions__list li span {
   margin-left: 1rem;
+}
+
+.section-nutrition__table {
+  font-size: 1.6rem;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+.section-nutrition__table--row:not(:last-of-type) {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+.section-nutrition__table td,
+.section-nutrition__table th {
+  padding: 1rem;
+}
+.section-nutrition__table th {
+  font-weight: 400;
+  color: var(--color-wenge-brown);
+  padding-left: 3rem;
+  width: 50%;
+}
+.section-nutrition__table td {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -72,3 +72,43 @@
         }
     }
 }
+
+.section-nutrition  {
+    &__table    {
+        font-size: 1.6rem;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: left;
+
+        &--row  {
+
+            &:not(:last-of-type)    {
+                border-bottom: 1px solid rgba(grey, 0.4);
+            }
+        }
+    
+        &--header   {
+    
+        }
+    
+        &--value    {
+    
+        }
+
+        td,
+        th  {
+            padding: 1rem;
+        }
+
+        th  {
+            font-weight: 400;
+            color: var(--color-wenge-brown);
+            padding-left: 3rem;
+            width: 50%;
+        }
+
+        td  {
+            font-weight: 700;
+        }
+    }
+}
