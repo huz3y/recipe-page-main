@@ -11,6 +11,15 @@ body    {
     color: var(--dark-charcoal);
     font-weight: 400;
     margin: 3rem 0 1rem 0;
+
+    @include respond(tab-port)   {
+        font-size: 3.7rem;
+    }
+
+    @include respond(phone)   {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }
 
 .heading-secondary  {
@@ -18,6 +27,11 @@ body    {
     font-family: var(--font-heading);
     font-weight: 500;
     margin: 3rem 0 1.3rem 0;
+    
+    @include respond(phone)   {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }
 
 .heading-tertiary   {
@@ -30,4 +44,9 @@ body    {
 .paragraph  {
     font-size: 1.6rem;
     color: var(--color-wenge-brown);
+
+    @include respond(phone)   {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }

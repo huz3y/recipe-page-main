@@ -4,4 +4,13 @@
     padding: 4rem;
     border-radius: 20px;
     margin: 0 auto;
+
+    @include respond(tab-land)   {
+        max-width: 100%;
+    }
+    
+    @include respond(phone)   {
+        border-radius: 0;
+        padding: 0;
+    }
 }

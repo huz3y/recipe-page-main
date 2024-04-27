@@ -4,6 +4,10 @@
         display: block;
         width: 100%;
         border-radius: 20px;
+
+        @include respond(tab-port)   {
+            border-radius: 0;
+        }
     }
 
     &__preparation-time {
@@ -11,6 +15,11 @@
         background-color: hsla(332, 51%, 32%, .06);
         border-radius: 20px;
         padding: 2rem 3rem;
+
+        @include respond(phone)   {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
     }
 
     &__time-details  {
@@ -34,9 +43,15 @@
 }
 
 .section-ingredients    {
+
     &__list {
         color: var(--color-wenge-brown);
         font-size: 1.6rem;
+
+        @include respond(phone)   {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
 
         li  {
             margin-left: 2.8rem;
@@ -54,6 +69,11 @@
     &__list {
         color: var(--color-wenge-brown);
         font-size: 1.6rem;
+
+        @include respond(phone)   {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
 
         li  {
             padding: .4rem;
@@ -74,11 +94,22 @@
 }
 
 .section-nutrition  {
+    @include respond(phone)   {
+        padding-bottom: 3rem;
+    }
+
     &__table    {
         font-size: 1.6rem;
         border-collapse: collapse;
         width: 100%;
         text-align: left;
+
+        @include respond(phone)   {
+            padding: 4rem;
+            padding-right: 4rem;
+            width: 90%;
+            margin: 0 auto;
+        }
 
         &--row  {
 
@@ -88,27 +119,19 @@
         }
     
         &--header   {
-    
-        }
-    
-        &--value    {
-    
-        }
-
-        td,
-        th  {
-            padding: 1rem;
-        }
-
-        th  {
             font-weight: 400;
             color: var(--color-wenge-brown);
             padding-left: 3rem;
             width: 50%;
         }
-
-        td  {
+    
+        &--value    {
             font-weight: 700;
+        }
+
+        &--header,
+        &--value  {
+            padding: 1rem;
         }
     }
 }

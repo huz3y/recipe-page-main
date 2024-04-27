@@ -1,4 +1,10 @@
 hr  {
     opacity: .4;
     margin: 3.5rem 0;
+
+    @include respond(phone)   {
+        width: 90%;
+        margin: 3.5rem auto;
+    }
 }
+
