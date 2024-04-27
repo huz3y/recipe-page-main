@@ -16,16 +16,19 @@
     &__time-details  {
         color: var(--color-wenge-brown);
         font-size: 1.6rem;
-        list-style: inside;
-        line-height: 2;
 
         li  {
-            margin-left: 1rem;
+            margin-left: 2.4rem;
+            padding: .4rem;
+            padding-left: 1.5rem;
+
+            &::marker   {
+                color: var(--color-primary-2);
+            }
         }
 
         span    {
             font-weight: 600;
-            margin-left: 1rem;
         }
     }
 }
@@ -34,15 +37,38 @@
     &__list {
         color: var(--color-wenge-brown);
         font-size: 1.6rem;
-        list-style: inside;
-        line-height: 2;
 
         li  {
-            margin-left: 1rem;
-            
-            span    {
-                margin-left: 1rem;
+            margin-left: 2.8rem;
+            padding: .4rem;
+            padding-left: 1.7rem;
+
+            &::marker   {
+                color: var(--color-primary-1);
             }
+        }
+    }
+}
+
+.section-instructions   {
+    &__list {
+        color: var(--color-wenge-brown);
+        font-size: 1.6rem;
+
+        li  {
+            padding: .4rem;
+            margin-left: 3rem;
+            padding-left: 1.5rem;
+
+            &::marker   {
+                color: var(--color-primary-1);
+                margin-right: 1rem;
+                font-weight: 700;
+            }
+        }
+
+        li span {
+            margin-left: 1rem;
         }
     }
 }
